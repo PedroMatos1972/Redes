@@ -1,0 +1,6 @@
+.vagrant
+.DS_Store
+.vagrant/
+packer_cache/
+*.box
+.bashrc
