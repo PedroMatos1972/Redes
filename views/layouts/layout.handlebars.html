@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projecto</title>	
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Cloud Iot</a>
+        </div>
+        
+        <div id="navbar" class="navbar-collapse collapse">
+          {{#if user}}
+          <ul class="nav navbar-nav">
+            
+            <li class="active"><a href="/">Dashboard</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>           
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/users/logout">Logout</a></li>
+          </ul>
+          {{else}}
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/users/register">Register</a></li>
+            <li><a href="/users/login">Login</a></li>
+          </ul>
+          {{/if}}
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <div class="container">
+    	{{{body}}}
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  
+
+</body>
+</html>

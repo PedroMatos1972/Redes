@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/Users/pedromatos/Redes","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
