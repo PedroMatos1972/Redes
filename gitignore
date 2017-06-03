@@ -4,3 +4,4 @@
 packer_cache/
 *.box
 .bashrc
+.vagrant/machines/default/virtualbox
